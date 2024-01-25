@@ -1,3 +1,4 @@
+
 import os
 import sys
 import time
@@ -42,7 +43,6 @@ def leeker():
    print("===============================================================================\n")
    print("[*] All cookies scrapped\n")
    menu = input("[*] Please enter to continue...")
-   menu()
  
  elif choose == "2":
    
@@ -56,7 +56,6 @@ def leeker():
    print("===============================================================================\n")
    print("[*] All apache passwords scrapped\n")
    menu = input("[*] Please enter to continue...")
-   menu()
 	
  elif choose == "3":
    
@@ -70,7 +69,6 @@ def leeker():
    print("===============================================================================\n")
    print("[*] All sql user passwords scrapped\n")
    menu = input("[*] Please enter to continue...")
-   menu()
 	
  elif choose == "4":
    
@@ -96,8 +94,7 @@ def leeker():
    print("===============================================================================\n")
    print("[*] All cookies scrapped\n")
    menu = input("[*] Please enter to continue...")
-   menu()
-	
+
 def files():
  
  print(Fore.GREEN + "\n..:: FILE SCRAPPER::..")
@@ -241,7 +238,6 @@ def files():
  print("===============================================================================\n")
  print("[*] All file types scrapped\n")
  menu = input("[*] Please enter to continue...")
- menu()
 
 def numbers():
  
@@ -261,7 +257,6 @@ def numbers():
  print("===============================================================================\n")
  print("[*] All phone numbers scrapped\n")
  menu = input("[*] Please enter to continue...")
- menu()
  
 def mails():
 
@@ -336,7 +331,6 @@ def mails():
  print("===============================================================================\n")
  print("[*] All mails scrapped\n")
  menu = input("[*] Please enter to continue...")
- menu()
 
 def pages():
  
@@ -425,8 +419,7 @@ def pages():
  print("===============================================================================\n")
  print("[*] All pages scrapped\n")
  menu = input("[*] Please enter to continue...")
- menu()
- 
+
 def other():
  
  print(Fore.GREEN + "\n..:: OTHER SCRAPPER ::..")
@@ -469,7 +462,6 @@ def other():
  print("[*] All other scrapping complated\n")
  menu = input("[*] Please enter to continue...")
 
-
 def password():
  
  print(Fore.GREEN + "\n..:: PASSWORD SCRAPPER ::..")
@@ -504,8 +496,7 @@ def password():
  print("===============================================================================\n") 
  print("[*] All passwords scrapped\n")
  menu = input("[*] Please enter to continue...")
- menu()
-  
+
 def section():
     print(Fore.WHITE + Back.GREEN + "\n" + "SELECT MODULE" + Style.RESET_ALL)
     print(Fore.GREEN + "\n===========================================================    ")
@@ -528,7 +519,7 @@ def section():
     elif choose == "5":
         other()
     else:
-        print("Invalid option! Please choose a valid option.")
+        print("\nInvalid option!")
    
 def full_scrapper():
  
@@ -924,19 +915,67 @@ def class_mode():
   print("[+] Dork scrapping complated\n")
   menu = input("[*] Please enter to continue...")
  
-
 def other_mode():
  
  print("\n..:: OTHER MODE ::..\n") 
  search = input("[*] Enter dork: ")
  print("\n===============================================================================") 
  for j in search(search, tld="co.in", num=10, stop=10, pause=2):
-   print(j)
+     print(j)
  print("===============================================================================\n") 
  print("[*] Dork scrapping complated\n")
- menu = input("[*] Please enter to continue...")
- menu()
+ ex = input("[*] Please enter to continue...")
+
+def person():
  
+ print("\n..:: PERSON SEARCHER ::..\n") 
+ name = input("[*] Enter name(or social account name): ")
+ sur = input("[*] Enter surname: ")
+ phone = input("[*] Enter phone nuber(If you don't know, enter the country code): ")
+ data_name = "intext: " + name
+ print("\n[*] Search name[1]: " + "[" + name + "]\n")
+ loading()
+ print("===============================================================================")
+ for j in search(data_name, tld="co.in", num=10, stop=10, pause=2):
+   print(j)
+ print("===============================================================================\n")
+ data_surname = "intext: " + name + " " + sur
+ print("[*] Search name and surname[2]: " + "[" + name + "]" + "[" + sur + "]\n")
+ loading()
+ print("===============================================================================")
+ for j in search(data_surname, tld="co.in", num=10, stop=10, pause=2):
+   print(j)
+ print("===============================================================================\n")
+ data_phone = "intext: " + phone
+ print("[*] Search phone number[3]: " + "[" + phone + "]\n")
+ loading()
+ print("===============================================================================")
+ for j in search(data_phone, tld="co.in", num=10, stop=10, pause=2):
+   print(j)
+ print("===============================================================================\n")
+ data_instagram = "site: instagram.com intext: " + name
+ print("[*] Search social account [instagram][4]: " + "[" + name + "]\n")
+ loading()
+ print("===============================================================================")
+ for j in search(data_instagram, tld="co.in", num=10, stop=10, pause=2):
+   print(j)
+ print("===============================================================================\n")
+ data_facebook = "site: facebook.com intext: " + name
+ print("[*] Search social account [facebook][5]: " + "[" + name + "]\n")
+ loading()
+ print("===============================================================================")
+ for j in search(data_facebook, tld="co.in", num=10, stop=10, pause=2):
+   print(j)
+ print("===============================================================================\n")
+ data_twitter = "site: twitter.com intext: " + name
+ print("[*] Search social account [twitter][6]: " + "[" + name + "]\n")
+ loading()
+ print("===============================================================================")
+ for j in search(data_instagram, tld="co.in", num=10, stop=10, pause=2):
+   print(j)
+ print("===============================================================================\n")
+ print("[*] Person scrapping complated\n")
+ menu = input("[*] Please enter to continue...")
 
 def manual_tools():
 
@@ -958,6 +997,7 @@ def auto_tools():
  print(Fore.GREEN +  "[1] : FULL      | FULL SCRAPPING     | ID: A104 | ACTIVATE      ")
  print(Fore.GREEN +  "[2] : SECTION   | SELECT SECTION     | ID: A158 | ACTIVATE      ")
  print(Fore.GREEN +  "[3] : LEEKER    | USER PASS SCRAPPER | ID: A107 | ACTIVATE      ")
+ print(Fore.GREEN +  "[4] : PERSON    | PERSON SEARCHER    | ID: A113 | ACTIVATE      ")
  print(Fore.GREEN +  "============================================================\n  ")
  choose = input("[amera] => ")
  if choose == "1":
@@ -966,6 +1006,8 @@ def auto_tools():
     section()	
  elif choose == "3":
     leeker()
+ elif choose == "4":
+    person()
 
 def exit():
    
@@ -1004,8 +1046,6 @@ def menu():
     manual_tools()
  elif choose == "3":
     exit()
-    
-	
-menu()
-   
-    
+
+if __name__ == "__main__":
+    menu()
