@@ -5,13 +5,13 @@
 ## Exploited vulnerabilities 🏴‍☠️
 **Sensitive Information Exposure CWE-200**
 ## All features ☠️
-**Get private files from website ✅**
-**Get emails from the website ✅**
-**Get phone numbers from the website ✅**
-**Collect information on any person ✅**
-**Collect information on any person ✅**
-**Find anyone's social media accounts ✅**
-**Collect open source api key, databases ✅**
+**Get private files from website ✅** <br/>
+**Get emails from the website ✅** <br/>
+**Get phone numbers from the website ✅** <br/>
+**Collect information on any person ✅** <br/>
+**Collect information on any person ✅** <br/>
+**Find anyone's social media accounts ✅** <br/>
+**Collect open source api key, databases ✅** <br/>
 **Get name and password with CWE-200 exploit ✅**
 ## How to download 💡
 **You can download instasploiit directly by saying** <br/><br/>
