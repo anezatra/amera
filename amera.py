@@ -518,6 +518,8 @@ def section():
         pages()
     elif choose == "5":
         other()
+    elif choose == "6":
+        password()
     else:
         print("\nInvalid option!")
    
@@ -1049,3 +1051,6 @@ def menu():
 
 if __name__ == "__main__":
     menu()
+    
+   
+    
