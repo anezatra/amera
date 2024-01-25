@@ -20,4 +20,5 @@
 ` python -m pip install -r requirements.txt ` <br/>
 ## Required python version 📌
 ` python 3.x `
-
+## About 🚀
+**My gmail adress: anezatra@gmail.com**
