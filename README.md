@@ -14,7 +14,7 @@
 **Collect open source api key, databases ✅** <br/>
 **Get name and password with CWE-200 exploit ✅**
 ## How to download 💡
-**You can download amera directly by saying** <br/><br/>
+**You can download Amera directly by saying** <br/><br/>
 ` pip install -r requirements.txt `
 ## or <br/>
 ` python -m pip install -r requirements.txt ` <br/>
